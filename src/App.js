@@ -5,7 +5,7 @@ class App extends Component{
 	constructor(props){
 		super(props)
 		this.state = {
-			count: 0 || JSON.parse(localStorage.getItem('count'))
+			count: JSON.parse(localStorage.getItem('count')) || 0
 		}
 		this.handleClick = this.handleClick.bind(this)
 	}
