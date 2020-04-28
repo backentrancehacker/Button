@@ -9,10 +9,6 @@ body{
 	overflow-x: hidden;
 	padding: 0;
 	margin: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	scroll-behavior: smooth;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

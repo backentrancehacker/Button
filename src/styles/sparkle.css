@@ -1,0 +1,29 @@
+.field {
+	position: fixed;
+	width: 5em;
+	height: 5em;
+	padding: 0;
+	margin: 0;
+	pointer-events: none;
+}
+.particle {
+	position: absolute;  
+	pointer-events: none;
+	height: 1em;
+	width: 1em;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	animation: fadeOut 1s reverse ease-in forwards; 
+	transition: transform 1s ease;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}

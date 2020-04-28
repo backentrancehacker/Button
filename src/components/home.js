@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
-import './App.css'
+import sparkle from './sparkle'
+import '../styles/home.css'
+import '../styles/sparkle.css'
 
-class App extends Component{
+class Home extends Component{
 	constructor(props){
 		super(props)
 		this.state = {
@@ -22,11 +24,13 @@ class App extends Component{
 		return(
 			<main className="container">
 				<h1 className="count">{this.state.count}</h1>
-				<button onClick={this.handleClick}>CLICK</button>
+				<div onClick={sparkle}>
+					<button onClick={this.handleClick}>CLICK</button>
+				</div>
 			</main>
 		)
 	}
 }
 
-export default App
+export default Home
 
