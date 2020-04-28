@@ -15,7 +15,7 @@ class App extends Component{
 					<Route exact path="/">
 						<Home />
 					</Route>
-					<Route exact path="/privacy">
+					<Route path="/privacy">
 						<Privacy />
 					</Route>
 				</Switch>
